@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Troca de Figurinhas Deluxe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🌟 Troca Deluxe da Copa</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Minhas Figurinhas</h2>
+      <input id="input-tem" placeholder="Número da Figurinha">
+      <button onclick="adicionar('tem')">Adicionar</button>
+      <ul id="lista-tem"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Figurinhas que Preciso</h2>
+      <input id="input-preciso" placeholder="Número da Figurinha">
+      <button onclick="adicionar('preciso')">Adicionar</button>
+      <ul id="lista-preciso"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Buscar Figurinhas</h2>
+      <input id="buscar" placeholder="Número para Buscar">
+      <button onclick="buscar()">Buscar</button>
+      <ul id="resultado-busca"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com ❤️ por colecionadores apaixonados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
