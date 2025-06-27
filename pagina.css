@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #00754a, #019061);
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 100px 20px 60px;
+  }
+
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: entradaTitulo 1s ease-out forwards;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    animation: entradaSubtitulo 1.2s ease-out forwards;
+  }
+  @keyframes entradaTitulo {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes entradaSubtitulo {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .botao-magia {
+    background: linear-gradient(to right, #ffd700, #ff4500);
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 16px 32px;
+    border-radius: 50px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s;
+  }
+
+  .botao-magia:hover {
+    transform: scale(1.05);
+  }
+
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255,215,0, 0.7); }
+    70% { box-shadow: 0 0 0 20px rgba(255,215,0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255,215,0, 0); }
+  }
+
+  .bola {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background: url;('https://eudsonj.github.io/trabalho/index.html;) no-repeat center;
+    background-size: cover;
+    animation: girarBola 6s linear infinite;
+  }
+
+  @keyframes girarBola {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #c8f3df;
+  }
