@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>🌍 TroCard</title>
+  <h1>🌍 TroCard</h1>
+  <p>Junte-se à comunidade oficial de colecionadores e complete seu álbum com mais diversão!</p>
+</header>
+
+<nav>
+  <a href="trocas.html">Trocas</a>
+  <a href="minhasfigurinhas.html">Minhas Figurinhas</a>
+</nav>
+
+<div class="container">
+  <div class="section">
+    <h2>🏆 Bem-vindo ao TroCard!</h2>
+    <p>Aqui é o lugar certo para trocar suas figurinhas e completar o álbum da Copa do Mundo de 2026. Encontre colecionadores, organize encontros e participe de desafios!</p>
+  </div>
+
+  <div class="section">
+    <h3>💬 O que você pode fazer:</h3>
+    <ul>
+      <li>Criar seu perfil e gerenciar suas figurinhas</li>
+      <li>Encontrar trocas compatíveis automaticamente</li>
+      <li>Filtrar por localização para trocas presenciais</li>
+      <li>Participar de sorteios e eventos especiais</li>
+    </ul>
+  </div>
+
+
+  <!-- Chat inserido -->
+  <div class="chat-box">
+    <h3>💬 Chat da Comunidade</h3>
+    <div class="chat-messages" id="chat-messages">
+      <div class="message"><strong>Maria:</strong> Alguém tem a figurinha 42 repetida?</div>
+      <div class="message"><strong>João:</strong> Tenho sim! Você tem a 17?</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="mensagem" placeholder="Digite sua mensagem..." />
+      <button onclick="enviarMensagem()">Enviar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function enviarMensagem() {
+    const input = document.getElementById("mensagem");
+    const chat = document.getElementById("chat-messages");
+    const texto = input.value.trim();
+
+    if (texto !== "") {
+      const novaMsg = document.createElement("div");
+      novaMsg.classList.add("message");
+      novaMsg.innerHTML = `<strong>Você:</strong> ${texto}`;
+      chat.appendChild(novaMsg);
+      chat.scrollTop = chat.scrollHeight;
+      input.value = "";
+    }
+  }
+
+  document.getElementById("mensagem").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+      enviarMensagem();
+    }
+  });
+</script>
+
+</body>
+</html>
