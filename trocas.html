@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troca de Figurinhas - Copa 2026</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+    }
+    header {
+      background-color: #006341;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #004d33;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #e0f2e9;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #006341;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004d33;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Troca de Figurinhas</h1>
+    <p>Cadastre suas repetidas e encontre quem tem o que você precisa!</p>
+  </header>
+
+  <nav>
+    <a href="login.html">Início</a>
+    <a href="eventos.html">Próximos Eventos</a>
+    <a href="como-participar.html">Como Participar</a>
+    <a href="contato.html">Contato</a>
+    <a href="minhas-figurinhas.html">Minhas Figurinhas</a>
+    <a href="troca.html">Troca</a>
+  </nav>
+
+  <div class="container">
+    <h2>Minhas Repetidas</h2>
+    <p>Digite os números das figurinhas que você tem repetidas:</p>
+    <input type="text" placeholder="Ex: 004, 017, 089, 120">
+    <button>Salvar Repetidas</button>
+
+    <h2>Figurinhas que Estou Procurando</h2>
+    <p>Digite os números das figurinhas que você está procurando:</p>
+    <input type="text" placeholder="Ex: 002, 010, 111, 199">
+    <button>Salvar Procuradas</button>
+
+    <h2>Possíveis Trocas</h2>
+    <table>
+      <tr>
+        <th>Usuário</th>
+        <th>Tem</th>
+        <th>Quer</th>
+        <th>Contato</th>
+      </tr>
+      <tr>
+        <td>JoãoFutebol</td>
+        <td>002, 010</td>
+        <td>004, 089</td>
+        <td><a href="mailto:joao@email.com">Enviar E-mail</a></td>
+      </tr>
+      <tr>
+        <td>MariaCopa</td>
+        <td>111, 199</td>
+        <td>017, 120</td>
+        <td><a href="mailto:maria@email.com">Enviar E-mail</a></td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
