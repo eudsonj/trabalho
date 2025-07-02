@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar / Criar Conta - Copa 2026</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+    }
+    header {
+      background-color: #006341;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #004d33;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .form-box {
+      flex: 1;
+      min-width: 300px;
+    }
+    h2 {
+      color: #006341;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #006341;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004d33;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Entrar ou Criar Conta</h1>
+    <p>Acesse sua coleção ou cadastre-se para começar a trocar figurinhas!</p>
+  </header>
+
+  <nav>
+    <a href="login.html">Início</a>
+    <a href="eventos.html">Próximos Eventos</a>
+    <a href="como-participar.html">Como Participar</a>
+    <a href="contato.html">Contato</a>
+    <a href="perfil.html">Perfil</a>
+  </nav>
+
+  <div class="container">
+    <div class="form-box">
+      <h2>Entrar</h2>
+      <form action="#" method="post">
+        <label for="login-email">E-mail:</label>
+        <input type="email" id="login-email" name="login-email" required>
+
+        <label for="login-senha">Senha:</label>
+        <input type="password" id="login-senha" name="login-senha" required>
+
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+
+    <div class="form-box">
+      <h2>Criar Conta</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+
+        <button type="submit">Criar Conta</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
